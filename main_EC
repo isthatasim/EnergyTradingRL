@@ -1,7 +1,3 @@
-# ==============================
-# Simplified Load Classes
-# ==============================
-# (Replace these with your actual implementations if available.)
 from InterruptibleLoad import InterruptibleLoad
 from ShiftableLoad import ShiftableLoad
 from ContinuouslyAdjustableLoad import ContinuouslyAdjustableLoad
@@ -454,4 +450,5 @@ if __name__ == "__main__":
     # When running this module directly, run the simulation and show the final data.
     final_all_flexibility_data = run_simulation_and_get_flex_data()
     # Additional code can be added here if needed.
+
 
