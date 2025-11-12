@@ -1,4 +1,3 @@
-# PP03_final_EC.py
 # ==============================
 # Simplified Load Classes
 # ==============================
@@ -21,13 +20,7 @@ from stable_baselines3.common.callbacks import BaseCallback
 from stable_baselines3.common.vec_env import DummyVecEnv, VecNormalize
 from stable_baselines3.common.env_checker import check_env
 
-# Suppress warnings for cleaner output
-warnings.filterwarnings("ignore")
 
-
-# ==============================
-# EnhancedCallback Class
-# ==============================
 class EnhancedCallback(BaseCallback):
     def __init__(self, verbose=0):
         super(EnhancedCallback, self).__init__(verbose)
@@ -85,10 +78,6 @@ class EnhancedCallback(BaseCallback):
         plt.tight_layout()
         plt.show()
 
-
-# ==============================
-# LoadManagerMDP Environment
-# ==============================
 class LoadManagerMDP(gym.Env):
     def __init__(self, profiles, extra_demand, price_per_kW):
         super(LoadManagerMDP, self).__init__()
@@ -218,10 +207,6 @@ class LoadManagerMDP(gym.Env):
         for load_id, contrib in self.flexibility_contribution.items():
             print(f"{load_id}: Flexibility Contribution: {contrib} (Limit: {self.flexibility_limits[load_id]})")
 
-
-# ==============================
-# CentralEnergyManager Class
-# ==============================
 class CentralEnergyManager:
     def __init__(self, environments):
         self.environments = environments
@@ -273,10 +258,6 @@ class CentralEnergyManager:
                         obs, info = reset_result, {}
                     obs_list[i] = (obs, info)
 
-
-# ==============================
-# Helper Functions
-# ==============================
 def get_total_flexibility_over_time(central_manager):
     return central_manager.total_flexibility_history
 
@@ -329,16 +310,8 @@ def print_flexibility_and_costs(envs, central_manager):
     overall_flexibility = central_manager.total_flexibility
     print(f"Overall Total Flexibility Across All Environments: {overall_flexibility:.2f} W")
 
-
-# ==============================
-# Global Variable for Final Data
-# ==============================
 final_all_flexibility_data = None
 
-
-# ==============================
-# Function to Run Simulation and Get Flex Data
-# ==============================
 def run_simulation_and_get_flex_data():
     """
     This function runs the simulation, trains the PPO model (if not already saved),
@@ -477,11 +450,8 @@ def run_simulation_and_get_flex_data():
     
     return final_data
 
-
-# ==============================
-# Main Execution (Optional)
-# ==============================
 if __name__ == "__main__":
     # When running this module directly, run the simulation and show the final data.
     final_all_flexibility_data = run_simulation_and_get_flex_data()
     # Additional code can be added here if needed.
+
