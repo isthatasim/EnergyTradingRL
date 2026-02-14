@@ -17,7 +17,7 @@ M. Asim. Amin, R. Procopio, M. Invernizzi, A. Bonfiglio, and Y. Jia, “Explorin
 
 # Published Paper:
 M. Asim Amin, Milutin Petronijević, Renato Procopio, Marco Invernizzi, Ivana Radonjic, Alice La Fata, "Energy trading in energy communities through load management using deep reinforcement learning, Energy, Volume 347, 2026, 140390, 
-https://doi.org/10.1016/j.energy.2026.140390.
+doi: https://doi.org/10.1016/j.energy.2026.140390.
 ‌
 
 ‌
