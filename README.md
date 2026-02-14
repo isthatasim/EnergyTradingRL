@@ -15,6 +15,9 @@ F. Rodrigues, C. Cardeira, J. M. F. Calado, and R. Melício, “Load Profile Ana
 # Reference Paper:
 M. Asim. Amin, R. Procopio, M. Invernizzi, A. Bonfiglio, and Y. Jia, “Exploring the role of energy Communities: A comprehensive review,” Energy Conversion and Management X, pp. 100883–100883, Jan. 2025, doi: https://doi.org/10.1016/j.ecmx.2025.100883.
 
+# Published Paper:
+M. Asim Amin, Milutin Petronijević, Renato Procopio, Marco Invernizzi, Ivana Radonjic, Alice La Fata, "Energy trading in energy communities through load management using deep reinforcement learning, Energy, Volume 347, 2026, 140390, 
+https://doi.org/10.1016/j.energy.2026.140390.
 ‌
 
 ‌
